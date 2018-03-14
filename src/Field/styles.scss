@@ -1,0 +1,19 @@
+.field {
+    margin-bottom:10px;
+    
+    .fieldContent{
+      display:flex;
+      .title{
+        margin-right:5px;
+      }
+      
+      input[type="text"]:invalid{
+       box-shadow: 0 0 1px 1px red;
+        // border-color:red;
+      }
+      
+    }
+    .validationErr{
+      color:red;
+    }
+  }
