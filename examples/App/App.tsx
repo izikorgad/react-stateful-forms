@@ -23,10 +23,10 @@ class App extends React.Component<any, any> {
         <Form onSubmit={ this.submitMyForm } name="test_form" header="My Test Form">
 
           <Field title="Name"
-            value="Jone"
+            value="John Doe"
             name="name"
             disabled={ false }
-            validator={ (value) => { if (value === "Jone") return "Please change default value"; return undefined; } }
+            validator={ (value) => { if (value === "John Doe") return "Please change default value"; return undefined; } }
             required inputType="text" />
 
           <Field title="Male"
