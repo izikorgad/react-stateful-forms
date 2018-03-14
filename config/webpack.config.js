@@ -85,19 +85,10 @@ const config = {
       },
       {
         test: /\.(sass|scss)$/,
-        // use: [
-        //   { loader: 'style' },
-        //   { loader: 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'},
-        //   {
-        //     loader: 'postcss',
-        //     options: { config: { path: path.resolve(CONFIG_DIR, 'postcss.config.js') } }
-        //   },
-        //   { loader: 'sass' }
-        // ],
         use: extractSass.extract({
           use: [
             {
-              loader: 'css'
+              loader: 'css?minimize=true'
             },
             {
               loader: 'postcss',
