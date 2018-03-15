@@ -39,8 +39,8 @@ class App extends React.Component<any, any> {
             name="gender"
             inputType="radio" />
 
-          <Field title="Sucscribe"
-            name="sucscribe"
+          <Field title="Subscribe"
+            name="subscribe"
             value={ false }
             required
             inputType="checkbox" />
